@@ -1,0 +1,17 @@
+uuid: 765da2b9-7511-4843-914d-05411f8d0940
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hwJoqnxqBS0fPM3s6FccZ2bWaq9LneRYLzFk-wlJWjs
+id: default
+label: Default
+traits: {  }
+locked: false
+description: ''
+variationType: default
+variationTypes:
+  - default
+  - glasses
+multipleVariations: true
+injectVariationFields: true

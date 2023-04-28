@@ -1,0 +1,30 @@
+# Local development services.
+#
+# To activate this feature, follow the instructions at the top of the
+# 'example.settings.local.php' file, which sits next to this file.
+parameters:
+  http.response.debug_cacheability_headers: true
+  # Configure Cross-Site HTTP requests (CORS).
+  # Read https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+  # for more information about the topic in general.
+  # Note: By default the configuration is disabled.
+  cors.config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: [ '*' ]
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: [ '*' ]
+    # Configure requests allowed from specific origins.
+    allowedOrigins: [ 'http://localhost:8081', 'http://localhost:8082','http://localhost:8083' ]
+    # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: false
+    # Sets the Access-Control-Max-Age header.
+    maxAge: false
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: false
+
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
+
+

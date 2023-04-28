@@ -1,0 +1,21 @@
+uuid: 7acf41ee-4636-4952-8b15-a174d5556d3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_attribute_value.field_hex_value
+field_name: field_hex_value
+entity_type: commerce_product_attribute_value
+type: string
+settings:
+  max_length: 30
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

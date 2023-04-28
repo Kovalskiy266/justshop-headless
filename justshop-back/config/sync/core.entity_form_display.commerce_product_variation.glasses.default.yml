@@ -1,0 +1,67 @@
+uuid: 0c5d04a3-161d-4cde-a73e-dae1c5f4a57a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.glasses
+    - field.field.commerce_product_variation.glasses.attribute_color
+    - field.field.commerce_product_variation.glasses.field_glasses_image
+  module:
+    - commerce_price
+    - media_library
+id: commerce_product_variation.glasses.default
+targetEntityType: commerce_product_variation
+bundle: glasses
+mode: default
+content:
+  attribute_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_glasses_image:
+    type: media_library_widget
+    weight: 91
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

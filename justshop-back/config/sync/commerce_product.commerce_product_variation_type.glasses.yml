@@ -1,0 +1,10 @@
+uuid: 38b439b0-0e69-4032-8663-903525efd392
+langcode: en
+status: true
+dependencies: {  }
+id: glasses
+label: Glasses
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false
