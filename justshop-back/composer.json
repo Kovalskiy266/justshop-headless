@@ -24,6 +24,10 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/json_field": "^1.2",
         "drupal/jsonapi_extras": "^3.23",
+        "drupal/jsonapi_menu_items": "^1.2",
+        "drupal/jsonapi_resources": "^1.0@beta",
+        "drupal/rest_api_authentication": "^2.0",
+        "drupal/restui": "^1.21",
         "drush/drush": "^11.5"
     },
     "conflict": {

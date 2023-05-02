@@ -40,6 +40,8 @@ module:
   inline_entity_form: 0
   jsonapi: 0
   jsonapi_extras: 0
+  jsonapi_menu_items: 0
+  jsonapi_resources: 0
   link: 0
   media: 0
   media_library: 0
@@ -53,6 +55,7 @@ module:
   path_alias: 0
   profile: 0
   rest: 0
+  restui: 0
   search: 0
   serialization: 0
   shortcut: 0
